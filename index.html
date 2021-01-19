@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crash your Windows 10</title>
+    <script>
+        function download() {
+            window.open('/crash.zip');
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Ubuntu Mono", monospace;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #616161;
+        }
+
+        main {
+            width: 90%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            background: #212121;
+            padding: 20px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        main * {
+            color: #1DE9B6;
+            text-align: center;
+        }
+
+        button {
+            box-sizing: border-box;
+            padding: 15px;
+            font-size: 20px;
+            color: #212121;
+            background: #1DE9B6;
+            appearance: none;
+            border: 0;
+            border-radius: 10px;
+            transition: .2s ease-in-out;
+            cursor: pointer;
+            outline: none;
+        }
+
+        button:hover {
+            color: white;
+            background: #00BFA5;
+        }
+
+        ::selection {
+            background: #A7FFEB;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Crash your Windows 10</h1>
+        <h4>This tool can crash your Windows 10 (v1709+)</h4>
+        <h4>The only thing you have to do is unpack the .zip file</h4>
+        <button onclick="download()">
+            DOWNLOAD THE FILE
+        </button>
+    </main>
+</body>
+
+</html>
